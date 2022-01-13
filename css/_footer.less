@@ -1,0 +1,111 @@
+// main: style.less
+
+.footer{
+  &-inner{
+    display: flex;
+    height: 550px;
+    width: 100%;
+    @media(max-width: 890px){
+      flex-direction: column;
+    }
+    @media(max-width: 440px){
+      height: auto;
+    }
+    & .map{
+      width: 50%;
+      position: relative;
+      @media(max-width: 890px){
+        width: 100%;
+        height: 300px;
+      }
+      & img{
+        width: 100%;
+        height: 100%;
+      }
+      & .point{
+        position: absolute;
+        top: 28.5%;
+        left: 57.3%;
+        width: 60px;
+        height: 75px;
+      }
+    }
+    & .info{
+      width: 50%;
+      background: url('../img/fields.jpeg');
+      padding: 10px 50px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      @media(max-width: 890px){
+        width: 100%;
+      }
+      & .logo{
+        margin-bottom: 20px;
+        & img{
+        @media(max-width: 370px){
+          width: 100%;
+      }
+        }
+        
+      }
+      & .inform{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        @media(max-width: 1480px){
+           width: 100%;
+        }
+        @media(max-width: 440px){
+          flex-direction: column;
+       }
+        & .nav{
+          margin-right: 100px;
+          @media(max-width: 1220px){
+           margin-right: 20px;
+        }
+          &-list{
+            display: flex;
+            flex-direction: column;
+            & .list-item{
+              margin-bottom: 20px;
+              & a{
+              font-size: 24px;
+              line-height: 130%;
+              color: #FFFFFF;
+              }
+              
+            }
+          }
+        }
+        & .contacts{
+          & .cont-item{
+            display: flex;
+            align-items: start;
+            margin-bottom: 20px;
+            & img{
+              margin-right: 10px;
+            }
+            & .p p{
+              font-size: 24px;
+              line-height: 130%;
+              color: #FFFFFF;
+              font-weight: 400;
+            }
+            & .p a{
+              font-size: 24px;
+              line-height: 130%;
+              color: #FFFFFF;
+              display: block;
+              font-weight: 400;
+            }
+          }
+
+        }
+      }
+      & .copy{
+        margin-top: auto;
+      }
+    }
+  }
+}
